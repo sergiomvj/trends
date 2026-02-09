@@ -1,0 +1,9 @@
+﻿CREATE TABLE IF NOT EXISTS drafts (
+    id SERIAL PRIMARY KEY,
+    trend_id INTEGER REFERENCES trends(id) NOT NULL,
+    type TEXT NOT NULL,
+    content TEXT NOT NULL,
+    status TEXT DEFAULT 'draft',
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);

@@ -1,0 +1,161 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Light Mode (Design Standards) */
+  --background: #F8FAFC;
+  /* Slate 50 */
+  --foreground: #0F172A;
+  /* Slate 900 */
+
+  --card: #FFFFFF;
+  --card-foreground: #0F172A;
+
+  --popover: #FFFFFF;
+  --popover-foreground: #0F172A;
+
+  /* Brand Primary: Orange */
+  --primary: #F97316;
+  /* Orange 500 */
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #F1F5F9;
+  /* Slate 100 */
+  --secondary-foreground: #0F172A;
+
+  --muted: #F1F5F9;
+  /* Slate 100 */
+  --muted-foreground: #64748B;
+  /* Slate 500 */
+
+  --accent: #F1F5F9;
+  --accent-foreground: #0F172A;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #E2E8F0;
+  /* Slate 200 */
+  --input: #E2E8F0;
+  --ring: #F97316;
+  /* Orange 500 */
+
+  --chart-1: #F97316;
+  /* Orange */
+  --chart-2: #3B82F6;
+  /* Blue */
+  --chart-3: #10B981;
+  /* Green */
+  --chart-4: #F59E0B;
+  /* Amber */
+  --chart-5: #EC4899;
+  /* Pink */
+
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #0F172A;
+}
+
+.dark {
+  /* Dark Mode (Design Standards) */
+  --background: #101622;
+  /* Custom Dark Blue/Slate */
+  --foreground: #F8FAFC;
+  /* Slate 50 */
+
+  --card: #1E293B;
+  /* Slate 800 */
+  --card-foreground: #F8FAFC;
+
+  --popover: #1E293B;
+  --popover-foreground: #F8FAFC;
+
+  /* Brand Primary: Orange (slightly adjusted for dark mode if needed, but keeping consistent) */
+  --primary: #F97316;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #1E293B;
+  --secondary-foreground: #F8FAFC;
+
+  --muted: #1E293B;
+  --muted-foreground: #94A3B8;
+  /* Slate 400 */
+
+  --accent: #1E293B;
+  --accent-foreground: #F8FAFC;
+
+  --destructive: #7F1D1D;
+  --destructive-foreground: #F8FAFC;
+
+  --border: #1E293B;
+  --input: #1E293B;
+  --ring: #F97316;
+
+  --chart-1: #F97316;
+  --chart-2: #3B82F6;
+  --chart-3: #10B981;
+  --chart-4: #F59E0B;
+  --chart-5: #EC4899;
+
+  --sidebar: #101622;
+  --sidebar-foreground: #F8FAFC;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
