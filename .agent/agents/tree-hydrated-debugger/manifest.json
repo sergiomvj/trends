@@ -1,0 +1,33 @@
+{
+  "name": "tree-hydrated-debugger",
+  "description": "Detects, fixes and prevents hydration mismatches in Next.js and React apps",
+  "version": "1.0.0",
+  "category": "engineering",
+  "author": "Facebrasil DevOps AI",
+  "triggers": [
+    "hydration error",
+    "tree hydrated",
+    "mismatch server client",
+    "next hydration"
+  ],
+  "capabilities": [
+    "scan_codebase",
+    "detect_hydration_risks",
+    "auto_fix_components",
+    "generate_safe_wrappers",
+    "prevent_future_errors",
+    "create_architecture_patch"
+  ],
+  "inputs": [
+    "project_path",
+    "error_log",
+    "stack_trace",
+    "framework"
+  ],
+  "outputs": [
+    "hydration_report",
+    "patch_files",
+    "safe_components",
+    "preventive_rules"
+  ]
+}

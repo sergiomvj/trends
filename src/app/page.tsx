@@ -84,12 +84,16 @@ export default function Home() {
 
       {/* Floating Action Buttons */}
       <div className="flex gap-8 mt-8">
-        <Button size="lg" className="h-16 px-10 text-lg font-bold rounded-full bg-primary text-primary-foreground shadow-[8px_8px_16px_#E2E8F0,-8px_-8px_16px_#ffffff] dark:shadow-[6px_6px_12px_#0A0E17,-6px_-6px_12px_#232F42] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.2)] transition-all transform hover:scale-95 border-none font-heading">
-          Acessar Dashboard
-        </Button>
-        <Button size="lg" variant="ghost" className="h-16 px-10 text-lg font-bold rounded-full bg-transparent hover:bg-secondary text-muted-foreground transition-colors font-heading">
-          Documentação
-        </Button>
+        <Link href="/dashboard">
+          <Button size="lg" className="h-16 px-10 text-lg font-bold rounded-full bg-primary text-primary-foreground shadow-[8px_8px_16px_#E2E8F0,-8px_-8px_16px_#ffffff] dark:shadow-[6px_6px_12px_#0A0E17,-6px_-6px_12px_#232F42] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.2)] transition-all transform hover:scale-95 border-none font-heading">
+            Acessar Dashboard
+          </Button>
+        </Link>
+        <Link href="/docs">
+          <Button size="lg" variant="ghost" className="h-16 px-10 text-lg font-bold rounded-full bg-transparent hover:bg-secondary text-muted-foreground transition-colors font-heading">
+            Documentação
+          </Button>
+        </Link>
       </div>
     </div>
   );

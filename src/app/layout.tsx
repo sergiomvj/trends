@@ -31,6 +31,7 @@ export default function RootLayout({
     }}>
       <html lang="en" suppressHydrationWarning>
         <body
+          suppressHydrationWarning
           className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-background text-foreground`}
         >
           <ThemeProvider
